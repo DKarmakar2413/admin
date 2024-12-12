@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel Kshitij</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="admin-panel">
+    <h1>Admin Panel Kshitij</h1>
+    <div>
+      <input type="text" class="text-view title" placeholder="Write Title">
+      <input type="text" class="text-view alert" placeholder="Write Alert">
+      <input type="text" class="text-view lat" placeholder="Write latitude">
+      <input type="text" class="text-view long" placeholder="Write longitude">
+    </div>
+    <button class="push-alerts" onclick="navigateToThankYou()">Push Alerts</button>
+  </div>
+  <script>
+    function navigateToThankYou() {
+      // Clear inputs before navigating
+      document.querySelectorAll(".text-view").forEach(input => (input.value = ""));
+      // Navigate to thank-you.html
+      window.location.href = "thank-you.html";
+    }
+  </script>
+</body>
+
+</html>
